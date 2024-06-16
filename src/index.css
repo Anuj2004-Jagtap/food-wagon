@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.text-gradient {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, rgb(255, 81, 0), rgb(255, 208, 0));
+}
+
+.custom-border-radius {
+  /* Resets any existing border-radius */
+  border-radius: 0% 27% 27% 27% / 25% 25% 0% 0%;
+}
+
+.custom-shape {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 0 0 1000px;
+  border-color: transparent transparent transparent #ffa500;
+}
+
+.custom-shape-2 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 150px 1000px;
+  border-color: transparent transparent #ffa500 transparent;
+}
